@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
@@ -18,8 +16,16 @@ export default function Home() {
             <div className="hidden md:flex items-center gap-8">
               <a href="#platform" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Platform</a>
               <a href="#guardrails" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Guardrails</a>
+              <a href="#token" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">ANCHOR Token</a>
               <a href="#enterprise" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Enterprise</a>
-              <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Pricing</a>
+              <a
+                href="https://discord.gg/dUQSg8SG"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900 transition text-sm font-medium"
+              >
+                Discord
+              </a>
               <a
                 href="https://github.com/chunkstar/agentanchorai"
                 target="_blank"
@@ -29,10 +35,10 @@ export default function Home() {
                 GitHub
               </a>
               <a
-                href="#contact"
+                href="#waitlist"
                 className="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg transition text-sm font-medium"
               >
-                Get Started
+                Join Waitlist
               </a>
             </div>
           </div>
@@ -44,7 +50,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-6 px-3 py-1.5 bg-slate-100 rounded-full text-slate-600 text-sm font-medium">
             <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-            Now in Private Beta
+            Building in Public
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">
@@ -59,16 +65,21 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#contact"
+              href="#waitlist"
               className="px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-semibold transition"
             >
-              Request Demo
+              Join the Waitlist
             </a>
             <a
-              href="#platform"
-              className="px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 border border-gray-200 rounded-lg font-semibold transition"
+              href="https://discord.gg/dUQSg8SG"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 border border-gray-200 rounded-lg font-semibold transition inline-flex items-center justify-center gap-2"
             >
-              Learn More
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+              Join Discord
             </a>
           </div>
 
@@ -79,7 +90,7 @@ export default function Home() {
               <span className="text-sm font-medium">SOC 2 Ready</span>
               <span className="text-sm font-medium">GDPR Compliant</span>
               <span className="text-sm font-medium">HIPAA Compatible</span>
-              <span className="text-sm font-medium">ISO 27001</span>
+              <span className="text-sm font-medium">Blockchain Anchored</span>
             </div>
           </div>
         </div>
@@ -227,12 +238,6 @@ export default function Home() {
                   </svg>
                   <span>Trust score minimum thresholds</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span>Human review of initial decision patterns</span>
-                </li>
               </ul>
             </div>
 
@@ -251,7 +256,7 @@ export default function Home() {
                   <svg className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>Action boundaries (what agents can't do)</span>
+                  <span>Action boundaries and restrictions</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -264,12 +269,6 @@ export default function Home() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   <span>Confidence-based escalation triggers</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span>Domain and scope restrictions</span>
                 </li>
               </ul>
             </div>
@@ -303,12 +302,6 @@ export default function Home() {
                   </svg>
                   <span>Trust decay for poor outcomes</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span>Automatic rollback capabilities</span>
-                </li>
               </ul>
             </div>
 
@@ -339,13 +332,7 @@ export default function Home() {
                   <svg className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>Autonomy level tied to trust score</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span>Time-based decay (trust must be earned)</span>
+                  <span>Autonomy tied to earned trust</span>
                 </li>
               </ul>
             </div>
@@ -353,8 +340,127 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Token Section */}
+      <section id="token" className="py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 bg-amber-100 rounded-full text-amber-700 text-sm font-medium">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              Coming Soon
+            </div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              ANCHOR Token
+            </h2>
+            <p className="text-lg text-gray-600">
+              The utility token that powers the AgentAnchor ecosystem. Earn by contributing, spend to operate.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Earn */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-100">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Earn ANCHOR</h3>
+              </div>
+              <ul className="space-y-4">
+                {[
+                  { action: 'Train Agents', desc: 'Graduate agents through Academy' },
+                  { action: 'Validate Decisions', desc: 'Serve as a validator on the Council' },
+                  { action: 'Provide Audits', desc: 'Run Observer nodes for the network' },
+                  { action: 'Report Anomalies', desc: 'Identify and report bad actors' },
+                  { action: 'Contribute Code', desc: 'Build and improve the platform' },
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span className="font-semibold text-gray-900">{item.action}</span>
+                      <span className="text-gray-600"> - {item.desc}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Spend */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Spend ANCHOR</h3>
+              </div>
+              <ul className="space-y-4">
+                {[
+                  { action: 'Deploy Agents', desc: 'Gas for agent operations' },
+                  { action: 'Access Features', desc: 'Premium governance tools' },
+                  { action: 'Stake for Governance', desc: 'Vote on protocol changes' },
+                  { action: 'Priority Support', desc: 'Expedited assistance' },
+                  { action: 'Custom Validators', desc: 'Deploy specialized validators' },
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span className="font-semibold text-gray-900">{item.action}</span>
+                      <span className="text-gray-600"> - {item.desc}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Token Features */}
+          <div className="mt-12 grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="text-center p-6">
+              <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h4 className="font-semibold text-gray-900 mb-2">Utility First</h4>
+              <p className="text-sm text-gray-600">Clear use within the ecosystem, not speculation</p>
+            </div>
+            <div className="text-center p-6">
+              <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h4 className="font-semibold text-gray-900 mb-2">Community Governed</h4>
+              <p className="text-sm text-gray-600">Token holders vote on protocol changes</p>
+            </div>
+            <div className="text-center p-6">
+              <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+              </div>
+              <h4 className="font-semibold text-gray-900 mb-2">Fair Launch</h4>
+              <p className="text-sm text-gray-600">No pre-sale, earned through contribution</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Enterprise Section */}
-      <section id="enterprise" className="py-20">
+      <section id="enterprise" className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -405,7 +511,7 @@ export default function Home() {
                 ),
               },
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition">
+              <div key={i} className="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition">
                 <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center text-slate-700 mb-4">
                   {item.icon}
                 </div>
@@ -417,183 +523,135 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Simple, Transparent Pricing
-            </h2>
-            <p className="text-lg text-gray-600">
-              Start small, scale as you grow. All plans include core governance features.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Starter */}
-            <div className="bg-white p-8 rounded-2xl border border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Starter</h3>
-              <p className="text-gray-600 text-sm mb-6">For teams getting started with AI agents</p>
-              <div className="mb-6">
-                <span className="text-4xl font-bold text-gray-900">$99</span>
-                <span className="text-gray-600">/month</span>
-              </div>
-              <ul className="space-y-3 mb-8">
-                {['5 AI Agents', 'Standard guardrails', 'Basic audit logs', 'Community support', 'Cloud deployment'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-gray-600 text-sm">
-                    <svg className="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <a href="#contact" className="block w-full py-3 text-center border border-gray-300 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition">
-                Get Started
-              </a>
-            </div>
-
-            {/* Business */}
-            <div className="bg-slate-900 p-8 rounded-2xl text-white relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-blue-500 text-white text-xs font-medium rounded-full">
-                Most Popular
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Business</h3>
-              <p className="text-slate-400 text-sm mb-6">For growing organizations</p>
-              <div className="mb-6">
-                <span className="text-4xl font-bold">$499</span>
-                <span className="text-slate-400">/month</span>
-              </div>
-              <ul className="space-y-3 mb-8">
-                {['50 AI Agents', 'Custom guardrail policies', 'Full audit trail & export', 'Priority support', 'SSO integration', 'API access'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-300 text-sm">
-                    <svg className="w-4 h-4 text-blue-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <a href="#contact" className="block w-full py-3 text-center bg-white text-slate-900 rounded-lg font-medium hover:bg-gray-100 transition">
-                Get Started
-              </a>
-            </div>
-
-            {/* Enterprise */}
-            <div className="bg-white p-8 rounded-2xl border border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Enterprise</h3>
-              <p className="text-gray-600 text-sm mb-6">For large-scale deployments</p>
-              <div className="mb-6">
-                <span className="text-4xl font-bold text-gray-900">Custom</span>
-              </div>
-              <ul className="space-y-3 mb-8">
-                {['Unlimited agents', 'Custom validators', 'On-premise option', 'Dedicated success manager', 'Custom SLA', 'Advanced compliance'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-gray-600 text-sm">
-                    <svg className="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <a href="#contact" className="block w-full py-3 text-center border border-gray-300 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition">
-                Contact Sales
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section id="contact" className="py-20">
+      {/* Waitlist Section */}
+      <section id="waitlist" className="py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to Govern Your AI?
+            Join the Waitlist
           </h2>
           <p className="text-lg text-gray-600 mb-10">
-            Join our private beta and be among the first to deploy AI agents with confidence.
+            Be among the first to deploy AI agents with confidence. Early supporters get priority access and ANCHOR token allocation.
           </p>
 
           <div className="bg-slate-50 p-8 rounded-2xl max-w-lg mx-auto">
-            <form className="space-y-4">
+            <form
+              action="https://formspree.io/f/xwpkvpvn"
+              method="POST"
+              className="space-y-4"
+            >
               <input
                 type="text"
+                name="name"
                 placeholder="Your name"
+                required
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent outline-none"
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Work email"
+                required
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent outline-none"
               />
               <input
                 type="text"
-                placeholder="Company"
+                name="company"
+                placeholder="Company (optional)"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent outline-none"
               />
+              <select
+                name="interest"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent outline-none text-gray-600"
+              >
+                <option value="">What interests you most?</option>
+                <option value="deploy-agents">Deploying governed AI agents</option>
+                <option value="train-agents">Training agents for others</option>
+                <option value="validator">Becoming a validator</option>
+                <option value="token">ANCHOR token ecosystem</option>
+                <option value="enterprise">Enterprise deployment</option>
+              </select>
               <button
                 type="submit"
                 className="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-semibold transition"
               >
-                Request Demo
+                Join Waitlist
               </button>
             </form>
             <p className="mt-4 text-sm text-gray-500">
-              We'll reach out within 24 hours to schedule your demo.
+              No spam. We'll only email you about AgentAnchor updates.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Open Source Section */}
-      <section className="py-16 border-t border-gray-100">
+      {/* Community Section */}
+      <section className="py-16 bg-slate-900 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <svg className="w-6 h-6 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
-              <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
-            </svg>
-            <span className="text-lg font-semibold text-gray-900">Open Source</span>
-          </div>
-          <p className="text-gray-600 mb-6">
-            AgentAnchor is open source because AI governance is too important to be controlled by any single company.
+          <h2 className="text-2xl font-bold mb-4">Join the Community</h2>
+          <p className="text-slate-400 mb-8">
+            AgentAnchor is open source. Join us in building the future of AI governance.
           </p>
-          <a
-            href="https://github.com/chunkstar/agentanchorai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900 font-medium"
-          >
-            View on GitHub
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="https://discord.gg/dUQSg8SG"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-[#5865F2] hover:bg-[#4752C4] rounded-lg font-medium transition inline-flex items-center gap-2"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+              Discord
+            </a>
+            <a
+              href="https://github.com/chunkstar/agentanchorai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-white/10 hover:bg-white/20 rounded-lg font-medium transition inline-flex items-center gap-2"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+              </svg>
+              GitHub
+            </a>
+            <a
+              href="https://x.com/agentanchorai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-white/10 hover:bg-white/20 rounded-lg font-medium transition inline-flex items-center gap-2"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+              @agentanchorai
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-slate-900 text-white">
+      <footer className="py-12 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center">
+              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <span className="text-xl font-semibold">AgentAnchor</span>
+              <span className="text-xl font-semibold text-gray-900">AgentAnchor</span>
             </div>
 
-            <div className="flex items-center gap-6 text-slate-400">
-              <a href="https://github.com/chunkstar/agentanchorai" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">GitHub</a>
-              <a href="mailto:hello@agentanchorai.com" className="hover:text-white transition">Contact</a>
-              <a href="#" className="hover:text-white transition">Privacy</a>
-              <a href="#" className="hover:text-white transition">Terms</a>
+            <div className="flex items-center gap-6 text-gray-500">
+              <a href="https://discord.gg/dUQSg8SG" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition">Discord</a>
+              <a href="https://github.com/chunkstar/agentanchorai" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition">GitHub</a>
+              <a href="https://x.com/agentanchorai" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition">X</a>
+              <a href="mailto:hello@agentanchorai.com" className="hover:text-gray-900 transition">Contact</a>
             </div>
           </div>
 
-          <div className="mt-8 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
-            &copy; {new Date().getFullYear()} AgentAnchor. All rights reserved.
+          <div className="mt-8 pt-8 border-t border-gray-100 text-center text-gray-500 text-sm">
+            &copy; {new Date().getFullYear()} AgentAnchor. Open source under MIT License.
           </div>
         </div>
       </footer>
