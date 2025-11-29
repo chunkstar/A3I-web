@@ -4,9 +4,7 @@
 
 *Building trust between humans and AI agents through transparent governance, earned autonomy, and immutable accountability.*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289da)](https://discord.gg/agentanchor)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289da)](https://discord.gg/dUQSg8SG)
 
 ---
 
@@ -163,33 +161,10 @@ Agents earn trust through verified good behavior:
 
 ---
 
-## Get Involved
+## Community
 
-We're building AgentAnchor in the open and welcome contributors!
-
-### Ways to Contribute
-
-- **Code**: Check out our [Contributing Guide](CONTRIBUTING.md)
-- **Ideas**: Open a [Discussion](https://github.com/agentanchor/agentanchor/discussions)
-- **Feedback**: Share your thoughts on AI governance
-- **Spread the Word**: Star the repo, share with others
-
-### Community
-
-- [Discord](https://discord.gg/agentanchor) - Join the conversation
-- [Twitter/X](https://twitter.com/agentanchor) - Follow for updates
-- [Blog](https://agentanchorai.com/blog) - Deep dives and updates
-
----
-
-## Why Open Source?
-
-AI governance is too important to be controlled by any single company. By building in the open:
-
-1. **Transparency**: Anyone can verify our systems work as claimed
-2. **Trust**: The community can audit the code that governs AI
-3. **Innovation**: Contributors can improve governance models
-4. **Adoption**: Standard governance benefits everyone
+- [Discord](https://discord.gg/dUQSg8SG) - Join the conversation
+- [Twitter/X](https://x.com/agentanchorai) - Follow for updates
 
 ---
 
@@ -204,41 +179,18 @@ AI governance is too important to be controlled by any single company. By buildi
 
 ---
 
-## Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/agentanchor/agentanchor.git
-
-# Install dependencies
-cd agentanchor
-npm install
-
-# Set up environment variables
-cp .env.example .env.local
-
-# Run development server
-npm run dev
-```
-
-See [DEVELOPMENT.md](DEVELOPMENT.md) for detailed setup instructions.
-
----
-
-## License
-
-AgentAnchor is [MIT licensed](LICENSE).
-
----
-
 ## Contact
 
 - Website: [agentanchorai.com](https://agentanchorai.com)
 - Email: hello@agentanchorai.com
-- Twitter: [@agentanchor](https://twitter.com/agentanchor)
+- Twitter: [@agentanchorai](https://x.com/agentanchorai)
 
 ---
 
 <p align="center">
   <strong>Building trust in AI, one verified decision at a time.</strong>
 </p>
+
+---
+
+Copyright 2025 AgentAnchor. All rights reserved.
