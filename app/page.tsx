@@ -16,7 +16,7 @@ export default function Home() {
             <div className="hidden md:flex items-center gap-8">
               <a href="#platform" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Platform</a>
               <a href="#guardrails" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Guardrails</a>
-              <a href="#token" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">ANCHOR Token</a>
+              <a href="#coins" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Coins</a>
               <a href="#enterprise" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Enterprise</a>
               <a
                 href="https://discord.gg/dUQSg8SG"
@@ -340,21 +340,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Token Section */}
-      <section id="token" className="py-20">
+      {/* Coins Section */}
+      <section id="coins" className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 bg-amber-100 rounded-full text-amber-700 text-sm font-medium">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              Coming Soon
+              Platform Currency
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              ANCHOR Token
+              Coins
             </h2>
             <p className="text-lg text-gray-600">
-              The utility token that powers the AgentAnchor ecosystem. Earn by contributing, spend to operate.
+              The internal currency that powers the AgentAnchor ecosystem. Earn by contributing, spend to interact with agents and features.
             </p>
           </div>
 
@@ -367,15 +367,15 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Earn ANCHOR</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Earn Coins</h3>
               </div>
               <ul className="space-y-4">
                 {[
-                  { action: 'Train Agents', desc: 'Graduate agents through Academy' },
-                  { action: 'Validate Decisions', desc: 'Serve as a validator on the Council' },
-                  { action: 'Provide Audits', desc: 'Run Observer nodes for the network' },
-                  { action: 'Report Anomalies', desc: 'Identify and report bad actors' },
-                  { action: 'Contribute Code', desc: 'Build and improve the platform' },
+                  { action: 'Train Agents', desc: 'Graduate agents through Academy', coins: '+50' },
+                  { action: 'Validate Decisions', desc: 'Serve as a validator on the Council', coins: '+25' },
+                  { action: 'Daily Login', desc: 'Consistent platform engagement', coins: '+5' },
+                  { action: 'Report Issues', desc: 'Identify bugs and problems', coins: '+10' },
+                  { action: 'Community Help', desc: 'Answer questions and support others', coins: '+15' },
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -383,9 +383,12 @@ export default function Home() {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <div>
-                      <span className="font-semibold text-gray-900">{item.action}</span>
-                      <span className="text-gray-600"> - {item.desc}</span>
+                    <div className="flex-1">
+                      <div className="flex justify-between items-center">
+                        <span className="font-semibold text-gray-900">{item.action}</span>
+                        <span className="text-green-600 font-bold text-sm">{item.coins}</span>
+                      </div>
+                      <span className="text-gray-600 text-sm">{item.desc}</span>
                     </div>
                   </li>
                 ))}
@@ -400,15 +403,15 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Spend ANCHOR</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Spend Coins</h3>
               </div>
               <ul className="space-y-4">
                 {[
-                  { action: 'Deploy Agents', desc: 'Gas for agent operations' },
-                  { action: 'Access Features', desc: 'Premium governance tools' },
-                  { action: 'Stake for Governance', desc: 'Vote on protocol changes' },
-                  { action: 'Priority Support', desc: 'Expedited assistance' },
-                  { action: 'Custom Validators', desc: 'Deploy specialized validators' },
+                  { action: 'Agent Interactions', desc: 'Chat with and use agents', coins: '-1 per message' },
+                  { action: 'Premium Features', desc: 'Access advanced tools', coins: '-20' },
+                  { action: 'Agent Training', desc: 'Enroll agents in Academy', coins: '-30' },
+                  { action: 'Priority Queue', desc: 'Skip the line for busy agents', coins: '-10' },
+                  { action: 'Custom Validators', desc: 'Deploy specialized validators', coins: '-100' },
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -416,9 +419,12 @@ export default function Home() {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <div>
-                      <span className="font-semibold text-gray-900">{item.action}</span>
-                      <span className="text-gray-600"> - {item.desc}</span>
+                    <div className="flex-1">
+                      <div className="flex justify-between items-center">
+                        <span className="font-semibold text-gray-900">{item.action}</span>
+                        <span className="text-blue-600 font-bold text-sm">{item.coins}</span>
+                      </div>
+                      <span className="text-gray-600 text-sm">{item.desc}</span>
                     </div>
                   </li>
                 ))}
@@ -426,34 +432,34 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Token Features */}
+          {/* Coin Features */}
           <div className="mt-12 grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="text-center p-6">
               <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Utility First</h4>
-              <p className="text-sm text-gray-600">Clear use within the ecosystem, not speculation</p>
+              <h4 className="font-semibold text-gray-900 mb-2">Earn By Doing</h4>
+              <p className="text-sm text-gray-600">Active participation rewards you with coins</p>
             </div>
             <div className="text-center p-6">
               <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
                 </svg>
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Community Governed</h4>
-              <p className="text-sm text-gray-600">Token holders vote on protocol changes</p>
+              <h4 className="font-semibold text-gray-900 mb-2">Fair Economy</h4>
+              <p className="text-sm text-gray-600">Balanced earn/spend rates for sustainability</p>
             </div>
             <div className="text-center p-6">
               <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Fair Launch</h4>
-              <p className="text-sm text-gray-600">No pre-sale, earned through contribution</p>
+              <h4 className="font-semibold text-gray-900 mb-2">No Real Money</h4>
+              <p className="text-sm text-gray-600">Internal currency only, no purchases required</p>
             </div>
           </div>
         </div>
@@ -530,7 +536,7 @@ export default function Home() {
             Join the Waitlist
           </h2>
           <p className="text-lg text-gray-600 mb-10">
-            Be among the first to deploy AI agents with confidence. Early supporters get priority access and ANCHOR token allocation.
+            Be among the first to deploy AI agents with confidence. Early supporters get priority access and bonus coins to get started.
           </p>
 
           <div className="bg-slate-50 p-8 rounded-2xl max-w-lg mx-auto">
@@ -567,7 +573,7 @@ export default function Home() {
                 <option value="deploy-agents">Deploying governed AI agents</option>
                 <option value="train-agents">Training agents for others</option>
                 <option value="validator">Becoming a validator</option>
-                <option value="token">ANCHOR token ecosystem</option>
+                <option value="coins">Coins ecosystem</option>
                 <option value="enterprise">Enterprise deployment</option>
               </select>
               <button
