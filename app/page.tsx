@@ -165,13 +165,13 @@ export default function Home() {
               <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-slate-300 via-slate-400 to-slate-300"></div>
 
               {[
-                { layer: 'Human Override', desc: 'Ultimate authority with walk-away rights and emergency controls', color: 'bg-slate-900' },
-                { layer: 'Council Governance', desc: 'Multi-validator consensus for high-risk decisions', color: 'bg-slate-800' },
-                { layer: 'Validator Agents', desc: 'Specialized agents assess risk and compliance', color: 'bg-slate-700' },
-                { layer: 'Academy Training', desc: 'Curriculum-based agent onboarding and certification', color: 'bg-slate-600' },
-                { layer: 'Truth Chain', desc: 'Immutable, blockchain-anchored decision records', color: 'bg-slate-500' },
-                { layer: 'Observer System', desc: 'Isolated audit layer for complete integrity', color: 'bg-slate-400' },
-                { layer: 'Worker Agents', desc: 'Your AI agents, governed and monitored', color: 'bg-slate-300' },
+                { layer: 'Human Override', desc: 'Lifeguard mode - real-time feed with override power, not approval queues', color: 'bg-slate-900' },
+                { layer: 'Council Governance', desc: 'Multi-validator consensus, triggered only for high-risk decisions', color: 'bg-slate-800' },
+                { layer: 'Validator Agents', desc: 'Risk routing - low risk skips validation, high risk gets full review', color: 'bg-slate-700' },
+                { layer: 'Academy + Shadow Mode', desc: 'Train in production - shadow agents run parallel, outputs compared', color: 'bg-slate-600' },
+                { layer: 'Truth Chain', desc: 'Merkle tree batching - 1000 events hashed, anchored hourly to Polygon', color: 'bg-slate-500' },
+                { layer: 'Observer System', desc: 'Async queue - fire-and-forget logging, never blocks agent responses', color: 'bg-slate-400' },
+                { layer: 'Worker Agents', desc: 'Dynamic personas, capability-based tools, trust-gated autonomy', color: 'bg-slate-300' },
               ].map((item, i) => (
                 <div key={i} className="relative flex items-start gap-6 pb-8 last:pb-0">
                   <div className={`relative z-10 w-16 h-16 ${item.color} rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg`}>
