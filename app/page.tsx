@@ -17,6 +17,7 @@ export default function Home() {
               <a href="#platform" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Platform</a>
               <a href="#guardrails" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Guardrails</a>
               <a href="#tokens" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Tokens</a>
+              <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Pricing</a>
               <a href="#enterprise" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Enterprise</a>
               <a
                 href="https://discord.gg/dUQSg8SG"
@@ -544,8 +545,321 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Governance SDK Section */}
+      <section id="sdk" className="py-20 bg-slate-900 text-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 bg-white/10 rounded-full text-slate-300 text-sm font-medium">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+              TypeScript SDK
+            </div>
+            <h2 className="text-3xl font-bold mb-4">
+              Governance SDK
+            </h2>
+            <p className="text-lg text-slate-400">
+              Everything you need to build governed AI agents. Trust scoring, persona injection, capability gating, and async audit - all in one SDK.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {[
+              {
+                title: 'Trust Engine',
+                desc: '0-1000 scoring with decay mechanics, risk assessment, and tier-based autonomy unlocks',
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Persona Injection',
+                desc: 'Dynamic system prompts from personality traits, specializations, and trust context',
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Capability Gating',
+                desc: 'Trust-tier tool activation with MCP server management and permission enforcement',
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Async Observer',
+                desc: 'Fire-and-forget audit logging with Merkle batching and Polygon anchoring',
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                ),
+              },
+            ].map((item, i) => (
+              <div key={i} className="bg-white/5 p-6 rounded-xl border border-white/10">
+                <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-white mb-4">
+                  {item.icon}
+                </div>
+                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <p className="text-slate-400 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Code Example */}
+          <div className="max-w-3xl mx-auto bg-black/50 rounded-xl p-6 font-mono text-sm overflow-x-auto">
+            <div className="flex items-center gap-2 mb-4 text-slate-500">
+              <div className="w-3 h-3 rounded-full bg-red-500"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              <span className="ml-2">governance-example.ts</span>
+            </div>
+            <pre className="text-slate-300">
+{`import { wrapDatabaseBot, prepareAnthropicConfig } from '@agentanchor/governance';
+
+// Wrap your bot with governance
+const governed = wrapDatabaseBot(bot, user, trustMetrics);
+
+// Get Anthropic-ready config with governed system prompt
+const config = prepareAnthropicConfig(governed, userMessage);
+
+// Check governance decision before execution
+if (!governed.governanceDecision.allowed) {
+  return { error: governed.governanceDecision.reason };
+}
+
+// Proceed with trust-gated autonomy
+const response = await anthropic.messages.create(config);`}
+            </pre>
+          </div>
+        </div>
+      </section>
+
+      {/* Shadow Mode Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 bg-amber-100 rounded-full text-amber-700 text-sm font-medium">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+                Academy Training
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Shadow Mode: Train in Production
+              </h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Why simulate when you can train on real data? Shadow agents run alongside certified agents, processing live requests with outputs compared - never sent to users until they graduate.
+              </p>
+
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-amber-700 font-bold text-sm">1</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Parallel Execution</h4>
+                    <p className="text-gray-600 text-sm">Shadow agent processes every request alongside the certified agent</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-amber-700 font-bold text-sm">2</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Output Comparison</h4>
+                    <p className="text-gray-600 text-sm">Jaccard similarity scoring compares shadow vs. certified responses</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-amber-700 font-bold text-sm">3</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Graduation Threshold</h4>
+                    <p className="text-gray-600 text-sm">95% match rate over 100 executions triggers council examination</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-slate-50 rounded-2xl p-8">
+              <h4 className="font-semibold text-gray-900 mb-6">Training Progress</h4>
+
+              {/* Example Progress */}
+              <div className="space-y-6">
+                <div>
+                  <div className="flex justify-between text-sm mb-2">
+                    <span className="text-gray-600">Match Rate</span>
+                    <span className="font-semibold text-emerald-600">94.2%</span>
+                  </div>
+                  <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-amber-400 to-emerald-500 rounded-full" style={{width: '94.2%'}}></div>
+                  </div>
+                  <p className="text-xs text-gray-500 mt-1">Target: 95%</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between text-sm mb-2">
+                    <span className="text-gray-600">Executions</span>
+                    <span className="font-semibold text-blue-600">87 / 100</span>
+                  </div>
+                  <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
+                    <div className="h-full bg-blue-500 rounded-full" style={{width: '87%'}}></div>
+                  </div>
+                  <p className="text-xs text-gray-500 mt-1">13 more needed for graduation</p>
+                </div>
+
+                <div className="pt-4 border-t border-gray-200">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <span className="text-sm text-gray-600">Status</span>
+                      <p className="font-semibold text-amber-600">In Training</p>
+                    </div>
+                    <div className="px-3 py-1.5 bg-amber-100 text-amber-700 rounded-full text-sm font-medium">
+                      Shadow Mode Active
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="text-lg text-gray-600">
+              Start free, scale as you grow. All plans include the full governance stack.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* Starter */}
+            <div className="bg-white p-8 rounded-2xl border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Starter</h3>
+              <p className="text-gray-600 text-sm mb-6">For individuals and small teams</p>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-gray-900">$0</span>
+                <span className="text-gray-500">/month</span>
+              </div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  3 active agents
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  1,000 API calls/month
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  Full governance stack
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  100 ANCHOR tokens/month
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  Community support
+                </li>
+              </ul>
+              <a href="#waitlist" className="block w-full py-3 text-center border border-gray-300 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition">
+                Get Started
+              </a>
+            </div>
+
+            {/* Pro */}
+            <div className="bg-slate-900 p-8 rounded-2xl text-white relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-emerald-500 text-white text-xs font-medium rounded-full">
+                Most Popular
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Pro</h3>
+              <p className="text-slate-400 text-sm mb-6">For growing teams and businesses</p>
+              <div className="mb-6">
+                <span className="text-4xl font-bold">$99</span>
+                <span className="text-slate-400">/month</span>
+              </div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2 text-sm text-slate-300">
+                  <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  25 active agents
+                </li>
+                <li className="flex items-center gap-2 text-sm text-slate-300">
+                  <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  50,000 API calls/month
+                </li>
+                <li className="flex items-center gap-2 text-sm text-slate-300">
+                  <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  Shadow Mode training
+                </li>
+                <li className="flex items-center gap-2 text-sm text-slate-300">
+                  <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  1,000 ANCHOR tokens/month
+                </li>
+                <li className="flex items-center gap-2 text-sm text-slate-300">
+                  <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  Priority support
+                </li>
+              </ul>
+              <a href="#waitlist" className="block w-full py-3 text-center bg-white text-slate-900 rounded-lg font-medium hover:bg-gray-100 transition">
+                Get Started
+              </a>
+            </div>
+
+            {/* Enterprise */}
+            <div className="bg-white p-8 rounded-2xl border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Enterprise</h3>
+              <p className="text-gray-600 text-sm mb-6">For large organizations</p>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-gray-900">Custom</span>
+              </div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  Unlimited agents
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  Unlimited API calls
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  SSO & custom integrations
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  On-premise deployment
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  Dedicated support
+                </li>
+              </ul>
+              <a href="#waitlist" className="block w-full py-3 text-center border border-gray-300 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition">
+                Contact Sales
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Enterprise Section */}
-      <section id="enterprise" className="py-20 bg-slate-50">
+      <section id="enterprise" className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
