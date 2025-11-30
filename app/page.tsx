@@ -18,7 +18,7 @@ export default function Home() {
               <a href="#guardrails" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Guardrails</a>
               <a href="#tokens" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Tokens</a>
               <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Pricing</a>
-              <a href="#enterprise" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Enterprise</a>
+              <a href="#developers" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Developers</a>
               <a
                 href="https://discord.gg/dUQSg8SG"
                 target="_blank"
@@ -743,7 +743,7 @@ const response = await anthropic.messages.create(config);`}
               Simple, Transparent Pricing
             </h2>
             <p className="text-lg text-gray-600">
-              Start free, scale as you grow. All plans include the full governance stack.
+              Choose the plan that fits your needs. All paid plans include the full governance stack.
             </p>
           </div>
 
@@ -751,31 +751,31 @@ const response = await anthropic.messages.create(config);`}
             {/* Starter */}
             <div className="bg-white p-8 rounded-2xl border border-gray-200">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Starter</h3>
-              <p className="text-gray-600 text-sm mb-6">For individuals and small teams</p>
+              <p className="text-gray-600 text-sm mb-6">Try before you commit</p>
               <div className="mb-6">
-                <span className="text-4xl font-bold text-gray-900">$0</span>
+                <span className="text-4xl font-bold text-gray-900">$29</span>
                 <span className="text-gray-500">/month</span>
               </div>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
                   <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                  3 active agents
+                  1 active agent
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
                   <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                  1,000 API calls/month
+                  500 API calls/month
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
                   <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                  Full governance stack
+                  Basic audit logging
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                  100 ANCHOR tokens/month
+                  <svg className="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                  <span className="text-gray-400">No Shadow Mode</span>
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                  Community support
+                  <svg className="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                  <span className="text-gray-400">No blockchain anchoring</span>
                 </li>
               </ul>
               <a href="#waitlist" className="block w-full py-3 text-center border border-gray-300 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition">
@@ -789,19 +789,23 @@ const response = await anthropic.messages.create(config);`}
                 Most Popular
               </div>
               <h3 className="text-xl font-semibold mb-2">Pro</h3>
-              <p className="text-slate-400 text-sm mb-6">For growing teams and businesses</p>
+              <p className="text-slate-400 text-sm mb-6">For teams serious about AI governance</p>
               <div className="mb-6">
-                <span className="text-4xl font-bold">$99</span>
+                <span className="text-4xl font-bold">$149</span>
                 <span className="text-slate-400">/month</span>
               </div>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2 text-sm text-slate-300">
                   <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                  25 active agents
+                  10 active agents
                 </li>
                 <li className="flex items-center gap-2 text-sm text-slate-300">
                   <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                  50,000 API calls/month
+                  25,000 API calls/month
+                </li>
+                <li className="flex items-center gap-2 text-sm text-slate-300">
+                  <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  Full governance stack
                 </li>
                 <li className="flex items-center gap-2 text-sm text-slate-300">
                   <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
@@ -809,11 +813,11 @@ const response = await anthropic.messages.create(config);`}
                 </li>
                 <li className="flex items-center gap-2 text-sm text-slate-300">
                   <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                  1,000 ANCHOR tokens/month
+                  Polygon blockchain anchoring
                 </li>
                 <li className="flex items-center gap-2 text-sm text-slate-300">
                   <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                  Priority support
+                  500 ANCHOR tokens/month
                 </li>
               </ul>
               <a href="#waitlist" className="block w-full py-3 text-center bg-white text-slate-900 rounded-lg font-medium hover:bg-gray-100 transition">
@@ -847,7 +851,11 @@ const response = await anthropic.messages.create(config);`}
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
                   <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                  Dedicated support
+                  Dedicated support & SLA
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  Custom ANCHOR allocation
                 </li>
               </ul>
               <a href="#waitlist" className="block w-full py-3 text-center border border-gray-300 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition">
@@ -858,66 +866,85 @@ const response = await anthropic.messages.create(config);`}
         </div>
       </section>
 
-      {/* Enterprise Section */}
-      <section id="enterprise" className="py-20">
+      {/* Developer Section */}
+      <section id="developers" className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
+            <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 bg-slate-100 rounded-full text-slate-600 text-sm font-medium">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+              Coming Soon
+            </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Enterprise-Grade Customization
+              Build on AgentAnchor
             </h2>
             <p className="text-lg text-gray-600">
-              Your organization, your rules. AgentAnchor adapts to your governance requirements.
+              The Governance SDK will be available for developers building AI applications. Add trust-based autonomy, audit trails, and compliance to your agents.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
               {
-                title: 'Custom Policies',
-                desc: 'Define risk classification, approval workflows, and escalation paths specific to your business.',
+                title: 'TypeScript SDK',
+                desc: 'First-class TypeScript support with full type definitions. Works with any AI provider - Anthropic, OpenAI, and more.',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
                 ),
+                status: 'Private Beta',
               },
               {
-                title: 'Custom Validators',
-                desc: 'Add compliance validators for SOC2, HIPAA, GDPR, or your industry-specific requirements.',
-                icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                ),
-              },
-              {
-                title: 'SSO & Integrations',
-                desc: 'Connect with Okta, Azure AD, Google. Integrate with Splunk, Datadog, and your existing tools.',
+                title: 'REST API',
+                desc: 'Full REST API for trust scoring, audit logging, and governance decisions. Webhooks for real-time events.',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 ),
+                status: 'Coming Q2',
               },
               {
-                title: 'Deployment Options',
-                desc: 'Cloud managed, hybrid, or fully on-premise. Your infrastructure, your choice.',
+                title: 'MCP Integration',
+                desc: 'Native Model Context Protocol support. Connect any MCP server with trust-gated permissions.',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                   </svg>
                 ),
+                status: 'Private Beta',
               },
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition">
-                <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center text-slate-700 mb-4">
-                  {item.icon}
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center text-slate-700">
+                    {item.icon}
+                  </div>
+                  <span className="px-2 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full">
+                    {item.status}
+                  </span>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-12 max-w-2xl mx-auto text-center">
+            <p className="text-gray-600 mb-6">
+              Interested in early access to our developer tools? Join the waitlist and select "Developer / Builder" as your interest.
+            </p>
+            <a
+              href="#waitlist"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-medium transition"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+              </svg>
+              Request Developer Access
+            </a>
           </div>
         </div>
       </section>
@@ -965,6 +992,7 @@ const response = await anthropic.messages.create(config);`}
                 <option value="">What interests you most?</option>
                 <option value="deploy-agents">Deploying governed AI agents</option>
                 <option value="train-agents">Training agents for others</option>
+                <option value="developer">Developer / Builder</option>
                 <option value="validator">Becoming a validator</option>
                 <option value="tokens">Dual token economy</option>
                 <option value="enterprise">Enterprise deployment</option>
