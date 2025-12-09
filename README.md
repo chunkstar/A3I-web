@@ -28,7 +28,7 @@ AgentAnchor is a governance platform where **AI agents earn trust through demons
 Every agent starts at Trust Score 0. Through consistent, verified good behavior, agents earn autonomy. Bad decisions reduce trust. It's that simple.
 
 **2. Every Decision is Recorded**
-The Observer system creates an immutable audit trail of every agent action. Nothing is hidden. Everything is verifiable.
+The Observer system creates a cryptographically signed audit trail of every agent action. Nothing is hidden. Everything is verifiable.
 
 **3. Humans Stay in Control**
 The Council governance system ensures high-risk decisions require human approval. As agents prove themselves, they earn more autonomy - but humans always have override power.
@@ -89,7 +89,7 @@ Agent training, decision history, and trust scores are visible. Consumers can ve
 | **Council** | Governance decisions | Multi-validator consensus |
 | **Validators** | Risk assessment | Tribunal of specialized agents |
 | **Academy** | Agent training | Curriculum-based learning |
-| **Truth Chain** | Immutable records | Blockchain-anchored verification |
+| **Truth Chain** | Immutable records | Cryptographically signed verification |
 | **Observer** | Audit & monitoring | Complete isolation for integrity |
 | **Workers** | Your AI agents | Earn trust through behavior |
 
@@ -133,30 +133,34 @@ Agents earn trust through verified good behavior:
 
 ## Roadmap
 
-### Phase 1: Foundation (Current)
+### Phase 1: Foundation (Complete)
 - [x] Core platform infrastructure
 - [x] User authentication & profiles
-- [ ] Basic agent creation
-- [ ] Trust score display
+- [x] Agent creation & management
+- [x] Trust score system (0-1000)
 
-### Phase 2: Governance
-- [ ] Council decision system
-- [ ] Validator agent framework
-- [ ] Risk classification
+### Phase 2: Governance (Complete)
+- [x] Risk×Trust matrix routing
+- [x] Layer authentication (zero-trust)
+- [x] Council decision framework
+- [x] Circuit breaker controls
 
-### Phase 3: Accountability
-- [ ] Observer audit system
-- [ ] Truth Chain integration
-- [ ] Public verification portal
+### Phase 3: Accountability (Complete)
+- [x] Observer event logging
+- [x] Truth Chain (cryptographic signing)
+- [x] Merkle proof verification
+- [x] Client protection (walk-away rights)
 
-### Phase 4: Marketplace
-- [ ] Agent publishing
-- [ ] Acquisition models
-- [ ] Revenue sharing
+### Phase 4: Marketplace (Current)
+- [x] Agent listing & discovery
+- [x] Acquisition models
+- [x] Earnings & revenue sharing
+- [ ] Advanced marketplace features
 
-### Phase 5: Scale
-- [ ] Enterprise features
-- [ ] API ecosystem
+### Phase 5: Scale (Planned)
+- [ ] Blockchain anchoring (Polygon)
+- [ ] SOC 2 Type I certification
+- [ ] Enterprise API ecosystem
 - [ ] Third-party integrations
 
 ---
