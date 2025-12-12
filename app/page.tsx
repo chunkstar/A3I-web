@@ -27,10 +27,10 @@ export default function Home() {
                 Discord
               </a>
               <a
-                href="#waitlist"
+                href="https://app.agentanchorai.com"
                 className="px-4 py-2 bg-gradient-to-r from-slate-900 to-slate-700 hover:from-slate-800 hover:to-slate-600 text-white rounded-lg transition text-sm font-medium"
               >
-                Apply Now
+                Launch App
               </a>
             </div>
           </div>
@@ -40,13 +40,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-slate-900 to-slate-800 rounded-full text-white text-sm font-medium shadow-lg">
-            <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
-            Private Beta — Apply for Early Access
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-full text-white text-sm font-medium shadow-lg">
+            <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+            A3I-OS v2.0 Live — 2,000+ Governed Agents
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">
-            The AI Safety<br />
+            The A3I<br />
             <span className="bg-gradient-to-r from-slate-700 to-slate-500 bg-clip-text text-transparent">Operating System</span>
           </h1>
 
@@ -54,13 +54,16 @@ export default function Home() {
             Deploy AI agents you can trust. AgentAnchor provides enterprise-grade governance,
             real-time safety controls, and immutable accountability for every agent action.
           </p>
+          <p className="text-lg text-emerald-700 font-medium mb-2">
+            "Agents you can anchor to."
+          </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#waitlist"
+              href="https://app.agentanchorai.com"
               className="px-8 py-4 bg-gradient-to-r from-slate-900 to-slate-700 hover:from-slate-800 hover:to-slate-600 text-white rounded-lg font-semibold transition shadow-lg hover:shadow-xl"
             >
-              Apply for Early Access
+              Enter The Anchor
             </a>
             <a
               href="https://discord.gg/dUQSg8SG"
@@ -79,11 +82,104 @@ export default function Home() {
           <div className="mt-16 pt-8 border-t border-gray-100">
             <p className="text-sm text-gray-500 mb-6">Built with enterprise security in mind</p>
             <div className="flex flex-wrap justify-center gap-8 text-gray-400">
-              <span className="text-sm font-medium">Security-First Architecture</span>
-              <span className="text-sm font-medium">Privacy by Design</span>
-              <span className="text-sm font-medium">Zero-Trust Layers</span>
-              <span className="text-sm font-medium">Cryptographic Audit Trail</span>
+              <span className="text-sm font-medium">8-Level Agent Hierarchy</span>
+              <span className="text-sm font-medium">Council of Nine Governance</span>
+              <span className="text-sm font-medium">Cryptographic Truth Chain</span>
+              <span className="text-sm font-medium">Human-in-the-Loop Controls</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Now Live Features Section */}
+      <section className="py-20 bg-emerald-50 border-y border-emerald-100">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 bg-emerald-100 rounded-full text-emerald-700 text-sm font-medium">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              Now Live
+            </div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Everything You Need to Deploy Trusted AI
+            </h2>
+            <p className="text-lg text-gray-600">
+              Full-featured platform with sandbox testing, shadow training, real-time safety controls, and 2,000+ curated agents.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: 'Sandbox Testing',
+                desc: 'Isolated environment to test prompts safely before production deployment',
+                icon: '🧪',
+                color: 'bg-purple-100 text-purple-700',
+              },
+              {
+                title: 'Shadow Training',
+                desc: 'A/B test multiple agents side-by-side to find your best performers',
+                icon: '⚡',
+                color: 'bg-blue-100 text-blue-700',
+              },
+              {
+                title: 'Agent Builder',
+                desc: 'Templates, guardrails, and governance controls built-in from day one',
+                icon: '🔧',
+                color: 'bg-amber-100 text-amber-700',
+              },
+              {
+                title: 'Dashboard Analytics',
+                desc: 'Role-based views with trust scores, earnings, and performance metrics',
+                icon: '📊',
+                color: 'bg-green-100 text-green-700',
+              },
+              {
+                title: 'Circuit Breaker',
+                desc: 'Instant pause/resume, global kill switch, cascade halt protocols',
+                icon: '🛑',
+                color: 'bg-red-100 text-red-700',
+              },
+              {
+                title: 'MIA Protocol',
+                desc: 'Automatic trainer inactivity detection with graduated warnings',
+                icon: '👀',
+                color: 'bg-orange-100 text-orange-700',
+              },
+              {
+                title: 'Notification Center',
+                desc: 'Multi-channel alerts via in-app, email, and webhook integrations',
+                icon: '🔔',
+                color: 'bg-indigo-100 text-indigo-700',
+              },
+              {
+                title: '2,000+ Agents',
+                desc: 'Curated marketplace with verified trust scores across industries',
+                icon: '🤖',
+                color: 'bg-slate-100 text-slate-700',
+              },
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div className={`w-12 h-12 ${item.color} rounded-xl flex items-center justify-center text-2xl mb-4`}>
+                  {item.icon}
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <a
+              href="https://app.agentanchorai.com"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-medium transition"
+            >
+              Explore All Features
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -227,9 +323,9 @@ export default function Home() {
                 color: 'bg-orange-100 text-orange-700',
               },
               {
-                title: 'HITL Automation',
-                desc: 'Graduated automation based on human-agent agreement rates over time.',
-                icon: '🤝',
+                title: 'MIA Protocol',
+                desc: 'Automated trainer inactivity detection with graduated warnings and platform takeover.',
+                icon: '👁️',
                 color: 'bg-blue-100 text-blue-700',
               },
             ].map((item, i) => (
@@ -301,7 +397,7 @@ export default function Home() {
               Curated Agent Marketplace
             </h2>
             <p className="text-lg text-gray-600">
-              Deploy agents with verified trust scores. Browse 1000+ specialized agents across industries, each with transparent performance history and governance compliance.
+              Deploy agents with verified trust scores. Browse 2,000+ specialized agents across industries, each with transparent performance history and governance compliance.
             </p>
           </div>
 
@@ -324,9 +420,9 @@ export default function Home() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-gray-600 mb-6">Launch with 1000+ specialized agents across customer service, technical support, creative, and more.</p>
-            <a href="#waitlist" className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-medium transition">
-              Browse Agents
+            <p className="text-gray-600 mb-6">Launch with 2,000+ specialized agents across customer service, technical support, creative, and more.</p>
+            <a href="https://app.agentanchorai.com/marketplace" className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-medium transition">
+              Browse 2,000+ Agents
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -391,6 +487,34 @@ export default function Home() {
                   </svg>
                 ),
               },
+              {
+                title: 'MIA Protocol',
+                desc: 'Trainer activity tracking with graduated warnings and platform takeover',
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Sandbox API',
+                desc: 'Isolated testing environment for safe prompt experimentation',
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Shadow Training',
+                desc: 'A/B test multiple agents with parallel execution and scoring',
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+                  </svg>
+                ),
+              },
             ].map((item, i) => (
               <div key={i} className="bg-white/5 p-6 rounded-xl border border-white/10">
                 <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-white mb-4">
@@ -439,50 +563,61 @@ await CircuitBreakerService.pauseAgent({
 
           <div className="mt-12 text-center">
             <p className="text-slate-400 mb-6">
-              Interested in early access to our developer tools? Apply for the private beta and select "Developer / Builder" as your interest.
+              Full SDK documentation available. Start building governed AI agents with our TypeScript SDK today.
             </p>
             <a
-              href="#waitlist"
+              href="https://app.agentanchorai.com/docs/api"
               className="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 rounded-lg font-medium hover:bg-gray-100 transition"
             >
-              Request Developer Access
+              View API Documentation
             </a>
           </div>
         </div>
       </section>
 
-      {/* Early Access Application Section */}
+      {/* Get Started Section */}
       <section id="waitlist" className="py-20 bg-gradient-to-b from-white to-slate-50">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 bg-emerald-100 rounded-full text-emerald-700 text-sm font-medium">
             <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
-            Limited Spots Available
+            Free to Start
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Apply for Private Beta
+            Start Building Today
           </h2>
           <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
-            Join select organizations deploying AI agents with enterprise-grade governance.
-            Early partners receive priority support and help shape the platform.
+            Create your account and deploy your first governed AI agent in minutes.
+            No credit card required to get started.
           </p>
 
-          {/* Google Form Embed */}
-          <div className="bg-white p-2 rounded-2xl shadow-xl max-w-2xl mx-auto">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSfYOUR_FORM_ID_HERE/viewform?embedded=true"
-              width="100%"
-              height="600"
-              frameBorder="0"
-              marginHeight={0}
-              marginWidth={0}
-              className="rounded-xl"
-            >
-              Loading application form...
-            </iframe>
+          {/* CTA Cards */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="text-4xl mb-4">🚀</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">For Consumers</h3>
+              <p className="text-gray-600 mb-6">Deploy trusted agents from our marketplace with full governance built-in.</p>
+              <a
+                href="https://app.agentanchorai.com"
+                className="block w-full px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-medium transition"
+              >
+                Browse Agents
+              </a>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="text-4xl mb-4">🔧</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">For Trainers</h3>
+              <p className="text-gray-600 mb-6">Build, train, and monetize AI agents with our comprehensive toolset.</p>
+              <a
+                href="https://app.agentanchorai.com/agents/new"
+                className="block w-full px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-medium transition"
+              >
+                Create Agent
+              </a>
+            </div>
           </div>
 
-          <p className="mt-6 text-sm text-gray-500">
-            Your information is secure. We review applications within 48 hours.
+          <p className="mt-8 text-sm text-gray-500">
+            Questions? Join our <a href="https://discord.gg/dUQSg8SG" className="text-emerald-600 hover:underline">Discord community</a> for support.
           </p>
         </div>
       </section>
@@ -523,7 +658,7 @@ await CircuitBreakerService.pauseAgent({
               <span className="text-lg font-semibold text-gray-900">AgentAnchor</span>
             </div>
             <p className="text-gray-500 text-sm">
-              © 2024 AgentAnchor. The AI Safety Operating System.
+              © 2025 AgentAnchor · A3I-OS v2.0 · "Agents you can anchor to."
             </p>
           </div>
         </div>
