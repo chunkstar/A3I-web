@@ -410,7 +410,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-2xl border border-slate-200">
               <div className="text-4xl mb-4">🔓</div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Tiered Autonomy</h3>
-              <p className="text-gray-600">Six trust tiers from Untrusted to Legendary. Higher trust unlocks more independent action.</p>
+              <p className="text-gray-600">Six trust tiers from Untrusted to Certified. Higher trust unlocks more independent action.</p>
             </div>
             <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-2xl border border-slate-200">
               <div className="text-4xl mb-4">⏱️</div>
