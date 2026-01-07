@@ -16,7 +16,7 @@ export default function Home() {
             <div className="hidden md:flex items-center gap-8">
               <a href="#platform" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Platform</a>
               <a href="#safety" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Safety</a>
-              <a href="#marketplace" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Marketplace</a>
+              <a href="#trust" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Trust</a>
               <a href="#developers" className="text-gray-600 hover:text-gray-900 transition text-sm font-medium">Developers</a>
               <a
                 href="https://discord.gg/dUQSg8SG"
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-full text-white text-sm font-medium shadow-lg">
             <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-            A3I-OS v2.0 Live — 2,000+ Governed Agents
+            A3I-OS v2.0 Live — Enterprise AI Governance
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">
@@ -105,7 +105,7 @@ export default function Home() {
               Everything You Need to Deploy Trusted AI
             </h2>
             <p className="text-lg text-gray-600">
-              Full-featured platform with sandbox testing, shadow training, real-time safety controls, and 2,000+ curated agents.
+              Full-featured platform with sandbox testing, shadow training, real-time safety controls, and comprehensive trust verification.
             </p>
           </div>
 
@@ -124,14 +124,14 @@ export default function Home() {
                 color: 'bg-blue-100 text-blue-700',
               },
               {
-                title: 'Agent Builder',
-                desc: 'Templates, guardrails, and governance controls built-in from day one',
-                icon: '🔧',
-                color: 'bg-amber-100 text-amber-700',
+                title: 'Trust Verification',
+                desc: '0-1000 trust scoring with tier-based autonomy and capability gating',
+                icon: '✅',
+                color: 'bg-emerald-100 text-emerald-700',
               },
               {
                 title: 'Dashboard Analytics',
-                desc: 'Role-based views with trust scores, earnings, and performance metrics',
+                desc: 'Role-based views with trust scores, compliance status, and performance metrics',
                 icon: '📊',
                 color: 'bg-green-100 text-green-700',
               },
@@ -143,20 +143,20 @@ export default function Home() {
               },
               {
                 title: 'MIA Protocol',
-                desc: 'Automatic trainer inactivity detection with graduated warnings',
+                desc: 'Automatic inactivity detection with graduated warnings and escalation',
                 icon: '👀',
                 color: 'bg-orange-100 text-orange-700',
               },
               {
-                title: 'Notification Center',
-                desc: 'Multi-channel alerts via in-app, email, and webhook integrations',
-                icon: '🔔',
+                title: 'Truth Chain',
+                desc: 'Cryptographic audit trail with immutable decision logging',
+                icon: '⛓️',
                 color: 'bg-indigo-100 text-indigo-700',
               },
               {
-                title: '2,000+ Agents',
-                desc: 'Curated marketplace with verified trust scores across industries',
-                icon: '🤖',
+                title: 'Council Governance',
+                desc: 'Multi-validator consensus framework for high-stakes decisions',
+                icon: '⚖️',
                 color: 'bg-slate-100 text-slate-700',
               },
             ].map((item, i) => (
@@ -383,46 +383,46 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Marketplace Section */}
-      <section id="marketplace" className="py-20">
+      {/* Trust Section */}
+      <section id="trust" className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 bg-emerald-100 rounded-full text-emerald-700 text-sm font-medium">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
-              Agent Marketplace
+              Trust Framework
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Curated Agent Marketplace
+              Earned Autonomy Through Verified Trust
             </h2>
             <p className="text-lg text-gray-600">
-              Deploy agents with verified trust scores. Browse 2,000+ specialized agents across industries, each with transparent performance history and governance compliance.
+              Trust isn't given—it's earned. Our scoring system tracks agent behavior over time, unlocking greater autonomy as reliability is proven.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-2xl border border-slate-200">
-              <div className="text-4xl mb-4">🎓</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Structured Training</h3>
-              <p className="text-gray-600">Academy framework provides curriculum covering safety, ethics, and domain expertise.</p>
+              <div className="text-4xl mb-4">📈</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Behavioral Scoring</h3>
+              <p className="text-gray-600">0-1000 trust score based on actual performance, compliance, and decision quality over time.</p>
             </div>
             <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-2xl border border-slate-200">
-              <div className="text-4xl mb-4">✅</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Governance Ready</h3>
-              <p className="text-gray-600">Multi-validator framework ensures agents operate within quality and safety standards.</p>
+              <div className="text-4xl mb-4">🔓</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Tiered Autonomy</h3>
+              <p className="text-gray-600">Six trust tiers from Untrusted to Legendary. Higher trust unlocks more independent action.</p>
             </div>
             <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-2xl border border-slate-200">
-              <div className="text-4xl mb-4">📊</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Trust Verified</h3>
-              <p className="text-gray-600">Real performance history. Trust scores from 0-1000 based on actual behavior.</p>
+              <div className="text-4xl mb-4">⏱️</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Trust Decay</h3>
+              <p className="text-gray-600">Inactive agents lose trust over time. Continuous engagement maintains earned privileges.</p>
             </div>
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-gray-600 mb-6">Launch with 2,000+ specialized agents across customer service, technical support, creative, and more.</p>
-            <a href="https://app.agentanchorai.com/marketplace" className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-medium transition">
-              Browse 2,000+ Agents
+            <p className="text-gray-600 mb-6">Every agent action is logged, scored, and contributes to their trust profile.</p>
+            <a href="https://app.agentanchorai.com" className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-medium transition">
+              Explore Trust Dashboard
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -593,25 +593,25 @@ await CircuitBreakerService.pauseAgent({
           {/* CTA Cards */}
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <div className="text-4xl mb-4">🚀</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">For Consumers</h3>
-              <p className="text-gray-600 mb-6">Deploy trusted agents from our marketplace with full governance built-in.</p>
+              <div className="text-4xl mb-4">🛡️</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">For Enterprises</h3>
+              <p className="text-gray-600 mb-6">Deploy AI with confidence using our comprehensive trust and governance framework.</p>
               <a
                 href="https://app.agentanchorai.com"
                 className="block w-full px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-medium transition"
               >
-                Browse Agents
+                Get Started
               </a>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-              <div className="text-4xl mb-4">🔧</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">For Trainers</h3>
-              <p className="text-gray-600 mb-6">Build, train, and monetize AI agents with our comprehensive toolset.</p>
+              <div className="text-4xl mb-4">💻</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">For Developers</h3>
+              <p className="text-gray-600 mb-6">Integrate trust scoring, circuit breakers, and governance into your AI systems.</p>
               <a
-                href="https://app.agentanchorai.com/agents/new"
+                href="https://app.agentanchorai.com/docs/api"
                 className="block w-full px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-medium transition"
               >
-                Create Agent
+                View API Docs
               </a>
             </div>
           </div>
@@ -658,7 +658,7 @@ await CircuitBreakerService.pauseAgent({
               <span className="text-lg font-semibold text-gray-900">AgentAnchor</span>
             </div>
             <p className="text-gray-500 text-sm">
-              © 2025 AgentAnchor · A3I-OS v2.0 · "Agents you can anchor to."
+              © 2026 AgentAnchor · A3I-OS v2.0 · "Agents you can anchor to."
             </p>
           </div>
         </div>
